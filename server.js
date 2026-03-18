@@ -39,5 +39,5 @@ const server = http.createServer((req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || process.env.VIBEKIT_PORT || 4003;
 server.listen(PORT, '0.0.0.0', () => console.log('listening on ' + PORT));
